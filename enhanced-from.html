@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 & Form</title>
+</head>
+<body>
+  <header>
+    <h1>HTML5 Content & Form</h1>
+    <p>This page demonstrates what I learnt in Week 2 on advanced HTML5 content elements and a fully validated form.</p>
+  </header>
+
+  <section>
+    <h2>My Favorite Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+   <section>
+    <h2>Tools you need to install</h2>
+    <ol>
+      <li>VSCode</li>
+      <li>Git</li>
+      <li>MySQL</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Weekly Learning Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML & CSS</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>JavaScript</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Python</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media</h2>
+    <figure>
+      <img src="/media/pexels-mali-142497.jpg" width="250" height="250" alt="A huge forest tree" />
+      <figcaption>A tree.</figcaption>
+    </figure>
+    <audio controls>
+      <source src="/media/keyboard-typing-sound-250308.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <video width="320" height="240" controls>
+      <source src="https://videos.pexels.com/video-files/32904798/14023639_1080_1920_30fps.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" pattern="[a-zA-Z0-9]+" placeholder="Choose a username" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" placeholder="Enter a secure password" />
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="8" placeholder="Re-enter password" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="language">Preferred Language:</label>
+        <select id="language" name="language" required>
+          <option value="">--Select--</option>
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="java">Java</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe" checked readonly />
+          Subscribe to newsletter (mandatory)
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kelvin's Web Lab. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
